@@ -28,7 +28,7 @@ My research focuses on **video generation, world models, and robotics**, with an
 - **Jun. 2026** — Released **Supervise What Survives**, our work on geometry-guided VLA adaptation from synthetic robot videos; currently under review at CoRL 2026.
 - **Oct. 2025** — **LayerTracer** was presented as an **Oral** paper at ICCV 2025.
 
-📚 Selected Publications
+📚 Publications
 ======
 
 {% assign selected_publications = site.publications | sort: "selected_rank" %}
