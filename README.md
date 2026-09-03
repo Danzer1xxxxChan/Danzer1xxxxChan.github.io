@@ -1,24 +1,21 @@
-# Danze Chen 的个人主页
+# Danze Chen's Academic Homepage
 
-这是 [Danze Chen 的个人主页](https://danzer1xxxxchan.github.io)，使用开源的 [Academic Pages](https://github.com/academicpages/academicpages.github.io) 模板并通过 GitHub Pages 发布。
+Personal academic website for [Danze Chen](https://danzer1xxxxchan.github.io), built with the open-source [Academic Pages](https://github.com/academicpages/academicpages.github.io) template and hosted on GitHub Pages.
 
-## 常用修改位置
+## Content
 
-- `_config.yml`：姓名、简介、头像、联系方式和社交账号
-- `_pages/about.md`：首页正文
-- `_data/navigation.yml`：顶部导航栏
-- `images/`：头像和页面图片
-- `_publications/`：论文
-- `_talks/`：演讲
-- `_teaching/`：教学经历
-- `_portfolio/`：项目作品
-- `_posts/`：博客文章
+- `_config.yml`: site metadata, profile, and social links
+- `_pages/about.md`: homepage
+- `_pages/cv.md`: curriculum vitae
+- `_data/navigation.yml`: top navigation
+- `_publications/`: publication records
+- `images/`: profile and site images
 
-## 本地预览
+## Local preview
 
 ```bash
 bundle install
 bundle exec jekyll serve
 ```
 
-然后访问 <http://localhost:4000>。
+Then open <http://localhost:4000>.

@@ -1,31 +1,48 @@
 ---
 layout: archive
-title: "个人简历"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
-教育经历
+Research Interests
 ======
 
-- 请在这里填写学校、专业和就读时间。
+Video generation, world models, robotics, vision-language-action models, and interactive visual intelligence.
 
-工作经历
+Education
 ======
 
-- 请在这里填写公司或机构、职位和时间。
+**National University of Singapore**<br>
+M.Sc. in Computer Engineering · Present<br>
+Show Lab; supervised by [Prof. Mike Zheng Shou](https://scholar.google.com/citations?user=h1-3lSoAAAAJ&hl=en)
 
-技能
+**Wuhan University**<br>
+Bachelor's degree, School of Electronic Information
+
+Research Experience
 ======
 
-- 技能一
-- 技能二
+**Tencent Interactive Entertainment Group (IEG)**<br>
+Research Intern · Present<br>
+Research on algorithms for game world models.
 
-研究与项目
+Selected Publications
 ======
 
-- 请在这里填写有代表性的研究或项目。
+{% assign selected_publications = site.publications | sort: "selected_rank" %}
+{% for post in selected_publications %}
+- **{{ post.title }}** — {{ post.venue }}
+{% endfor %}
+
+Contact
+======
+
+- Email: [danzerchan@gmail.com](mailto:danzerchan@gmail.com)
+- NUS: [danze_chen@u.nus.edu](mailto:danze_chen@u.nus.edu)
+- Wuhan University: [chendanze@whu.edu.cn](mailto:chendanze@whu.edu.cn)
+- [Google Scholar](https://scholar.google.com/citations?user=7XRxZr0AAAAJ&hl=en)
+- [GitHub](https://github.com/Danzer1xxxxChan)
+- [X / Twitter](https://x.com/DanzerChan)

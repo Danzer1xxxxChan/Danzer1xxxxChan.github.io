@@ -1,28 +1,71 @@
 {
   "basics": {
-    "name": "Danze Chen",
-    "email": "",
+    "name": "Danze Chen (陈丹泽)",
+    "email": "danzerchan@gmail.com",
     "phone": "",
     "website": "https://danzer1xxxxchan.github.io",
-    "summary": "",
+    "summary": "M.Sc. student in Computer Engineering at NUS Show Lab, researching video generation, world models, and robotics.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "",
-      "countryCode": "",
+      "city": "Singapore",
+      "countryCode": "SG / CN",
       "region": ""
     },
     "profiles": [
       {
+        "network": "Google Scholar",
+        "username": "Danze Chen",
+        "url": "https://scholar.google.com/citations?user=7XRxZr0AAAAJ&hl=en"
+      },
+      {
         "network": "GitHub",
         "username": "Danzer1xxxxChan",
         "url": "https://github.com/Danzer1xxxxChan"
+      },
+      {
+        "network": "X / Twitter",
+        "username": "DanzerChan",
+        "url": "https://x.com/DanzerChan"
       }
     ]
   },
-  "work": [],
-  "education": [],
-  "skills": [],
+  "work": [
+    {
+      "company": "Tencent Interactive Entertainment Group (IEG)",
+      "position": "Research Intern",
+      "website": "",
+      "startDate": "",
+      "endDate": "Present",
+      "summary": "Research on game world model algorithms.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "National University of Singapore",
+      "area": "Computer Engineering",
+      "studyType": "Master of Science",
+      "startDate": "",
+      "endDate": "Present",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Wuhan University",
+      "area": "Electronic Information",
+      "studyType": "Bachelor's Degree",
+      "startDate": "",
+      "endDate": "",
+      "gpa": null,
+      "courses": []
+    }
+  ],
+  "skills": [
+    {"name": "Video Generation", "level": "", "keywords": []},
+    {"name": "World Models", "level": "", "keywords": []},
+    {"name": "Robotics", "level": "", "keywords": []}
+  ],
   "languages": [],
   "interests": [],
   "references": [],

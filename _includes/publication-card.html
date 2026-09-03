@@ -1,0 +1,13 @@
+<article class="publication-card">
+  <div class="publication-card__header">
+    <h3 class="publication-card__title">{{ include.post.title }}</h3>
+    <span class="publication-card__venue">{{ include.post.venue }}</span>
+  </div>
+  <p class="publication-card__authors">{{ include.post.authors }}</p>
+  <p class="publication-card__summary">{{ include.post.excerpt }}</p>
+  <div class="publication-card__links">
+    {% if include.post.projecturl %}<a href="{{ include.post.projecturl }}">Project</a>{% endif %}
+    {% if include.post.paperurl %}<a href="{{ include.post.paperurl }}">Paper</a>{% endif %}
+    {% if include.post.codeurl %}<a href="{{ include.post.codeurl }}">Code</a>{% endif %}
+  </div>
+</article>
