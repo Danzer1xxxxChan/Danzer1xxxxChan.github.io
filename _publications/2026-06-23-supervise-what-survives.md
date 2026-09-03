@@ -9,6 +9,9 @@ selected_rank: 2
 authors: "<strong>Danze Chen</strong>, Yanzhe Chen, Qiming Huang, Zhijun Cao, Chen Gao, Mike Zheng Shou"
 excerpt: "Introduces geometry-guided representation alignment for adapting vision-language-action models from synthetic robot videos while keeping low-level control grounded in real demonstrations."
 paperurl: "https://arxiv.org/abs/2606.24448"
+media_type: "image"
+media_url: "/images/publications/supervise-what-survives.jpg"
+media_alt: "Overview of geometry-guided VLA adaptation from synthetic robot videos"
 ---
 
 This work identifies an asymmetric preservation principle: synthetic robot videos retain useful visual geometry but not the exact motor controls behind it. The proposed GRA method therefore uses geometry to supervise visual representations while learning control from real demonstrations.

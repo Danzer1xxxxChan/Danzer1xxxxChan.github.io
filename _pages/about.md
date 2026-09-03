@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Danze Chen | 陈丹泽"
+title:
 author_profile: true
 redirect_from:
   - /about/
@@ -16,19 +16,19 @@ redirect_from:
 My research focuses on **video generation, world models, and robotics**, with an emphasis on building generative models that can understand, simulate, and control interactive visual worlds. I am currently a Research Intern at **Tencent IEG**, working on algorithms for game world models. I received my bachelor's degree from the School of Electronic Information at **Wuhan University**.
 
 <div class="research-tags" aria-label="Research interests">
-  <span>Video Generation</span>
-  <span>World Models</span>
-  <span>Robotics</span>
+  <span>🎬 Video Generation</span>
+  <span>🌍 World Models</span>
+  <span>🤖 Robotics</span>
 </div>
 
-News
+✨ News
 ======
 
 - **Sep. 2026** — Released **H3-World**, an efficient framework that turns language understanding in a large video generator into temporally grounded world control.
 - **Jun. 2026** — Released **Supervise What Survives**, our work on geometry-guided VLA adaptation from synthetic robot videos; currently under review at CoRL 2026.
 - **Oct. 2025** — **LayerTracer** was presented as an **Oral** paper at ICCV 2025.
 
-Selected Publications
+📚 Selected Publications
 ======
 
 {% assign selected_publications = site.publications | sort: "selected_rank" %}
@@ -38,7 +38,7 @@ Selected Publications
 
 <p class="section-more"><a href="/publications/">View the full publication list →</a></p>
 
-Education & Experience
+🎓 Education & Experience
 ======
 
 <div class="timeline-list">
@@ -58,7 +58,7 @@ Education & Experience
   </div>
 </div>
 
-Contact
+✉️ Contact
 ======
 
 I am happy to connect with researchers and collaborators working on generative world models and embodied intelligence.

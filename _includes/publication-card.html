@@ -1,13 +1,25 @@
 <article class="publication-card">
-  <div class="publication-card__header">
-    <h3 class="publication-card__title">{{ include.post.title }}</h3>
-    <span class="publication-card__venue">{{ include.post.venue }}</span>
+  <div class="publication-card__media">
+    {% if include.post.media_type == "video" %}
+      <video autoplay muted loop playsinline preload="metadata" aria-label="{{ include.post.media_alt }}">
+        <source src="{{ include.post.media_url | relative_url }}" type="video/mp4">
+      </video>
+    {% elsif include.post.media_type == "image" %}
+      <img src="{{ include.post.media_url | relative_url }}" alt="{{ include.post.media_alt }}" loading="lazy">
+    {% endif %}
   </div>
-  <p class="publication-card__authors">{{ include.post.authors }}</p>
-  <p class="publication-card__summary">{{ include.post.excerpt }}</p>
-  <div class="publication-card__links">
-    {% if include.post.projecturl %}<a href="{{ include.post.projecturl }}">Project</a>{% endif %}
-    {% if include.post.paperurl %}<a href="{{ include.post.paperurl }}">Paper</a>{% endif %}
-    {% if include.post.codeurl %}<a href="{{ include.post.codeurl }}">Code</a>{% endif %}
+
+  <div class="publication-card__body">
+    <div class="publication-card__header">
+      <h3 class="publication-card__title">{{ include.post.title }}</h3>
+      <span class="publication-card__venue">{{ include.post.venue }}</span>
+    </div>
+    <p class="publication-card__authors">{{ include.post.authors }}</p>
+    <p class="publication-card__summary">{{ include.post.excerpt }}</p>
+    <div class="publication-card__links">
+      {% if include.post.projecturl %}<a href="{{ include.post.projecturl }}">Project ↗</a>{% endif %}
+      {% if include.post.paperurl %}<a href="{{ include.post.paperurl }}">Paper ↗</a>{% endif %}
+      {% if include.post.codeurl %}<a href="{{ include.post.codeurl }}">Code ↗</a>{% endif %}
+    </div>
   </div>
 </article>

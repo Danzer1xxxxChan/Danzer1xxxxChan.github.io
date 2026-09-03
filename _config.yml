@@ -26,9 +26,9 @@ author:
   avatar           : "profile.jpg"
   name             : "Danze Chen | 陈丹泽"
   pronouns         : # example: "she/her"  
-  bio              : "M.Sc. student at NUS · Research Intern at Tencent IEG"
+  bio              : "M.Sc. student at NUS<br>Research Intern at Tencent IEG"
   location         : "Singapore & China"
-  employer         : "NUS Show Lab"
+  employer         :
   uri              : # URL
   email            : "danzerchan@gmail.com"
 
