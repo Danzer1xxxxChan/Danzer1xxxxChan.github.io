@@ -1,0 +1,33 @@
+{
+  "basics": {
+    "name": "Danze Chen",
+    "email": "",
+    "phone": "",
+    "website": "https://danzer1xxxxchan.github.io",
+    "summary": "",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Danzer1xxxxChan",
+        "url": "https://github.com/Danzer1xxxxChan"
+      }
+    ]
+  },
+  "work": [],
+  "education": [],
+  "skills": [],
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "publications": [],
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
+}
