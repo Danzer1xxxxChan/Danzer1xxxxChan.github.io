@@ -43,18 +43,33 @@ My research focuses on **video generation, world models, and robotics**, with an
 
 <div class="timeline-list">
   <div class="timeline-item">
-    <div class="timeline-role">Research Intern</div>
-    <div class="timeline-place">Tencent Interactive Entertainment Group (IEG)</div>
-    <div class="timeline-note">Research on game world model algorithms · Present</div>
+    <div class="timeline-logo">
+      <img src="/images/organizations/tencent.png" alt="Tencent logo">
+    </div>
+    <div class="timeline-content">
+      <div class="timeline-role">Research Intern</div>
+      <div class="timeline-place">Tencent Interactive Entertainment Group (IEG)</div>
+      <div class="timeline-note">Research on game world model algorithms · Present</div>
+    </div>
   </div>
   <div class="timeline-item">
-    <div class="timeline-role">M.Sc. in Computer Engineering</div>
-    <div class="timeline-place">National University of Singapore · Show Lab</div>
-    <div class="timeline-note">Advisor: Prof. Mike Zheng Shou · Present</div>
+    <div class="timeline-logo timeline-logo--wide">
+      <img src="/images/organizations/nus.jpg" alt="National University of Singapore logo">
+    </div>
+    <div class="timeline-content">
+      <div class="timeline-role">M.Sc. in Computer Engineering</div>
+      <div class="timeline-place">National University of Singapore · Show Lab</div>
+      <div class="timeline-note">Advisor: Prof. Mike Zheng Shou · Present</div>
+    </div>
   </div>
   <div class="timeline-item">
-    <div class="timeline-role">Bachelor's Degree</div>
-    <div class="timeline-place">School of Electronic Information, Wuhan University</div>
+    <div class="timeline-logo">
+      <img src="/images/organizations/whu.png" alt="Wuhan University logo">
+    </div>
+    <div class="timeline-content">
+      <div class="timeline-role">Bachelor's Degree</div>
+      <div class="timeline-place">School of Electronic Information, Wuhan University</div>
+    </div>
   </div>
 </div>
 
