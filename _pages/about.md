@@ -21,23 +21,6 @@ My research focuses on **video generation, world models, and robotics**, with an
   <span>🤖 Robotics</span>
 </div>
 
-✨ News
-======
-
-- **Sep. 2026** — Released **H3-World**, an efficient framework that turns language understanding in a large video generator into temporally grounded world control.
-- **Jun. 2026** — Released **Supervise What Survives**, our work on geometry-guided VLA adaptation from synthetic robot videos; currently under review at CoRL 2026.
-- **Oct. 2025** — **LayerTracer** was presented as an **Oral** paper at ICCV 2025.
-
-📚 Publications
-======
-
-{% assign selected_publications = site.publications | sort: "selected_rank" %}
-{% for post in selected_publications %}
-  {% include publication-card.html post=post %}
-{% endfor %}
-
-<p class="section-more"><a href="/publications/">View the full publication list →</a></p>
-
 🎓 Education & Experience
 ======
 
@@ -53,7 +36,7 @@ My research focuses on **video generation, world models, and robotics**, with an
     </div>
   </div>
   <div class="timeline-item">
-    <div class="timeline-logo timeline-logo--wide">
+    <div class="timeline-logo">
       <img src="/images/organizations/nus.jpg" alt="National University of Singapore logo">
     </div>
     <div class="timeline-content">
@@ -72,6 +55,23 @@ My research focuses on **video generation, world models, and robotics**, with an
     </div>
   </div>
 </div>
+
+✨ News
+======
+
+- **Sep. 2026** — Released **H3-World**, an efficient framework that turns language understanding in a large video generator into temporally grounded world control.
+- **Jun. 2026** — Released **Supervise What Survives**, our work on geometry-guided VLA adaptation from synthetic robot videos; currently under review at CoRL 2026.
+- **Oct. 2025** — **LayerTracer** was presented as an **Oral** paper at ICCV 2025.
+
+📚 Publications
+======
+
+{% assign selected_publications = site.publications | sort: "selected_rank" %}
+{% for post in selected_publications %}
+  {% include publication-card.html post=post %}
+{% endfor %}
+
+<p class="section-more"><a href="/publications/">View the full publication list →</a></p>
 
 ✉️ Contact
 ======

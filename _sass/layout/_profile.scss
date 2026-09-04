@@ -215,7 +215,7 @@ body {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr);
+  grid-template-columns: 84px minmax(0, 1fr);
   gap: 1rem;
   align-items: center;
   margin: 0;
@@ -229,7 +229,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
+  width: 76px;
   height: 64px;
   padding: 0.42rem;
   border: 1px solid #eee3d9;
@@ -242,10 +242,6 @@ body {
     max-height: 100%;
     object-fit: contain;
   }
-}
-
-.timeline-logo--wide {
-  width: 76px;
 }
 
 .timeline-role {
@@ -301,13 +297,12 @@ body {
   }
 
   .timeline-item {
-    grid-template-columns: 58px minmax(0, 1fr);
+    grid-template-columns: 66px minmax(0, 1fr);
     gap: 0.75rem;
   }
 
-  .timeline-logo,
-  .timeline-logo--wide {
-    width: 52px;
+  .timeline-logo {
+    width: 60px;
     height: 52px;
   }
 }
