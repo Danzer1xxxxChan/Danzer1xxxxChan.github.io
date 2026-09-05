@@ -59,8 +59,9 @@ My research focuses on **video generation, world models, and robotics**, with an
 ✨ News
 ======
 
+- **Sep. 2026** — **Supervise What Survives** was **accepted to CoRL 2026**! 🎉
 - **Sep. 2026** — Released **H3-World**, an efficient framework that turns language understanding in a large video generator into temporally grounded world control.
-- **Jun. 2026** — Released **Supervise What Survives**, our work on geometry-guided VLA adaptation from synthetic robot videos; currently under review at CoRL 2026.
+- **Jun. 2026** — Released **Supervise What Survives**, our work on geometry-guided VLA adaptation from synthetic robot videos.
 - **Oct. 2025** — **LayerTracer** was presented as an **Oral** paper at ICCV 2025.
 
 📚 Publications
