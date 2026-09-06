@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/reactivegwm
 date: 2026-05-14
-venue: "NeurIPS 2026 Submission"
+venue: "CCF-A Conference Under Review"
 selected_rank: 4
 authors: "Zeqing Wang, <strong>Danze Chen</strong>, Zhaohu Xing, Zizhao Tong, Yinhan Zhang, Xingyi Yang, Yeying Jin"
 excerpt: "Separates low-level player control from high-level NPC strategy, enabling controllable interactions and zero-shot strategy transfer across game world models."

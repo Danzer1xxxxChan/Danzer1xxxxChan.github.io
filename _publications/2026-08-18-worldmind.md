@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/worldmind
 date: 2026-08-18
-venue: "AAAI 2027 Submission"
+venue: "CCF-A Conference Under Review"
 selected_rank: 3
 authors: "Zhiyang Deng, Boran Zhang, <strong>Danze Chen</strong>, Yeying Jin"
 excerpt: "Decouples state understanding, NPC decision-making, action control, and video generation, then reconnects them in a closed interaction loop for state-aware NPC behavior."
