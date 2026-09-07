@@ -1,9 +1,18 @@
 <article class="publication-card">
   <div class="publication-card__media">
     {% if include.post.media_type == "video" %}
-      <video autoplay muted loop playsinline preload="metadata" aria-label="{{ include.post.media_alt }}">
-        <source src="{{ include.post.media_url | relative_url }}" type="video/mp4">
-      </video>
+      {% assign poster = include.post.media_url | replace: '/assets/videos/', '/assets/videos/posters/' | replace: '.mp4', '.jpg' %}
+      <video class="pub-video"
+             poster="{{ poster | relative_url }}"
+             data-src="{{ include.post.media_url | relative_url }}"
+             muted loop playsinline webkit-playsinline
+             x5-playsinline="true"
+             x5-video-player-type="h5-page"
+             x5-video-player-fullscreen="false"
+             disablepictureinpicture
+             preload="none"
+             aria-label="{{ include.post.media_alt }}"></video>
+      <button class="pub-video__play" type="button" hidden aria-label="Play video">&#9654;</button>
     {% elsif include.post.media_type == "image" %}
       <img src="{{ include.post.media_url | relative_url }}" alt="{{ include.post.media_alt }}" loading="lazy">
     {% endif %}

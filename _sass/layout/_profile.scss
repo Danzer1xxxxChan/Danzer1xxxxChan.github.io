@@ -116,6 +116,7 @@ body {
 }
 
 .publication-card__media {
+  position: relative;
   aspect-ratio: 16 / 9;
   align-self: start;
   overflow: hidden;
@@ -133,6 +134,24 @@ body {
 
   video {
     background: #171412;
+  }
+
+  .pub-video__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer;
   }
 }
 

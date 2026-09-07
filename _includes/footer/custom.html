@@ -3,4 +3,77 @@
 <!-- Support for MathJax -->
 <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
 
+<!-- Publication card videos: poster first, load + play only when visible,
+     tap-to-play fallback where autoplay is blocked (WeChat / X5, iOS low-power). -->
+<script>
+(function () {
+  var vids = document.querySelectorAll('video.pub-video');
+  if (!vids.length) return;
+  var list = Array.prototype.slice.call(vids);
+
+  function attach(v) {
+    if (v.dataset.loaded) return;
+    var s = document.createElement('source');
+    s.src = v.dataset.src;
+    s.type = 'video/mp4';
+    v.appendChild(s);
+    v.dataset.loaded = '1';
+    v.load();
+  }
+
+  function btnOf(v) {
+    var p = v.parentNode;
+    return p ? p.querySelector('.pub-video__play') : null;
+  }
+
+  function tryPlay(v) {
+    attach(v);
+    var p = v.play();
+    if (p && p.then) {
+      p.then(function () {
+        var b = btnOf(v);
+        if (b) b.hidden = true;
+      }).catch(function () {
+        var b = btnOf(v);
+        if (b) b.hidden = false;
+      });
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    while (t && t !== document && !(t.classList && t.classList.contains('pub-video__play'))) t = t.parentNode;
+    if (!t || t === document) return;
+    var v = t.parentNode.querySelector('video.pub-video');
+    if (!v) return;
+    t.hidden = true;
+    attach(v);
+    v.play();
+  });
+
+  function startAll() { list.forEach(tryPlay); }
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        var v = en.target;
+        if (en.isIntersecting) tryPlay(v);
+        else if (!v.paused) v.pause();
+      });
+    }, { rootMargin: '150px 0px' });
+    list.forEach(function (v) { io.observe(v); });
+  } else {
+    startAll();
+  }
+
+  // WeChat blocks playback until its JS bridge is ready.
+  document.addEventListener('WeixinJSBridgeReady', function () {
+    list.forEach(function (v) {
+      var r = v.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) tryPlay(v);
+    });
+  }, false);
+})();
+</script>
+
 <!-- end custom footer snippets -->
